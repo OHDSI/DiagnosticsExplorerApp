@@ -6,10 +6,10 @@ on:
   workflow_dispatch:
 
 env:
-  DOCKER_IMAGE: ohdsi/howoften
+  DOCKER_IMAGE: ohdsi/diagnosticsexplorer
   MAINTAINER: Jamie Gilbert <gilbert@ohdsi.org>
   AUTHOR: Jamie Gilbert <gilbert@ohdsi.org>
-  APP_NAME: HowOften
+  APP_NAME: DiagnosticsExplorer
 jobs:
   docker:
     runs-on: ubuntu-latest
