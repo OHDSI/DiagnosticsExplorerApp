@@ -16,7 +16,7 @@ RUN echo "options(repos=c(CRAN='$CRAN'))" >> /root/.Rprofile
 
 RUN R -e 'install.packages(c("remotes", "rJava", "dplyr", "DatabaseConnector", "shiny", "RSQLite"))'
 # install additional required R packages
-RUN R -e "remotes::install_github('OHDSI/OhdsiShinyModules', ref='v2.0.2', update='always')"
+RUN R -e "remotes::install_github('OHDSI/OhdsiShinyModules', update='always')"
 RUN R -e "remotes::install_github('OHDSI/ResultModelManager', update='always')"
 
 # Set an argument for the app name
